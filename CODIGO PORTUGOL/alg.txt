@@ -1,0 +1,104 @@
+algoritmo AgenciaDeViagens
+
+// Definição das constantes
+const MAX_CLIENTES = 100
+const MAX_DESTINOS = 50
+
+// Definição dos vetores para armazenar os dados
+var
+    clientes: vetor [1..MAX_CLIENTES] de caractere
+    cpfs: vetor [1..MAX_CLIENTES] de caractere
+    totalClientes: inteiro
+
+    destinos: vetor [1..MAX_DESTINOS] de caractere
+    precos: vetor [1..MAX_DESTINOS] de real
+    totalDestinos: inteiro
+
+// Função para cadastrar um cliente
+funcao cadastrarCliente()
+inicio
+    se totalClientes < MAX_CLIENTES entao
+        totalClientes <- totalClientes + 1
+        escreva("Digite o nome do cliente: ")
+        leia(clientes[totalClientes])
+        escreva("Digite o CPF do cliente: ")
+        leia(cpfs[totalClientes])
+        escreva("Cliente cadastrado com sucesso!")
+    senao
+        escreva("Limite máximo de clientes atingido!")
+    fimse
+fim
+
+// Função para cadastrar um destino
+funcao cadastrarDestino()
+inicio
+    se totalDestinos < MAX_DESTINOS entao
+        totalDestinos <- totalDestinos + 1
+        escreva("Digite o nome do destino: ")
+        leia(destinos[totalDestinos])
+        escreva("Digite o preço do pacote para o destino: ")
+        leia(precos[totalDestinos])
+        escreva("Destino cadastrado com sucesso!")
+    senao
+        escreva("Limite máximo de destinos atingido!")
+    fimse
+fim
+
+// Função para consultar os clientes cadastrados
+funcao consultarClientes()
+inicio
+    se totalClientes > 0 entao
+        escreva("======= Clientes Cadastrados =======")
+        para i de 1 ate totalClientes faca
+            escreva("Nome: ", clientes[i], " | CPF: ", cpfs[i])
+        fimpara
+    senao
+        escreva("Nenhum cliente cadastrado.")
+    fimse
+fim
+
+// Função para consultar os destinos cadastrados
+funcao consultarDestinos()
+inicio
+    se totalDestinos > 0 entao
+        escreva("======= Destinos Cadastrados =======")
+        para i de 1 ate totalDestinos faca
+            escreva("Destino: ", destinos[i], " | Preço: ", precos[i])
+        fimpara
+    senao
+        escreva("Nenhum destino cadastrado.")
+    fimse
+fim
+
+// Função principal (menu)
+inicio
+    totalClientes <- 0
+    totalDestinos <- 0
+
+    repita
+        escreva("========= MENU =========")
+        escreva("1. Cadastrar Cliente")
+        escreva("2. Cadastrar Destino")
+        escreva("3. Consultar Clientes")
+        escreva("4. Consultar Destinos")
+        escreva("5. Sair")
+        escreva("Digite a opção desejada: ")
+        leia(opcao)
+
+        escolha opcao
+            caso 1
+                cadastrarCliente()
+            caso 2
+                cadastrarDestino()
+            caso 3
+                consultarClientes()
+            caso 4
+                consultarDestinos()
+            caso 5
+                escreva("Saindo do programa...")
+            caso contrario
+                escreva("Opção inválida, tente novamente.")
+        fimescolha
+
+    ate opcao = 5
+fim_algoritmo

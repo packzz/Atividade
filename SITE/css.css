@@ -1,0 +1,112 @@
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #cccccc;
+  background-image: linear-gradient(rgba(167, 253, 6, 0.432), rgb(227, 241, 173));
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 0 #f81515, -2px 0 #d5ff3e, 0 2px #2f89ff, 0 -2px #fff,
+    1px 1px #45ff16, -1px -1px #5d71e4, 1px -1px #f8096d, -1px 1px #8400ff;
+}
+
+#carousel-caption d-none d-md-block {
+  display: block;
+  margin: 0 auto;
+  float: none;
+  x text-align: center;
+}
+
+.card {
+  padding: 0px;
+  margin: 0px;
+  border-radius: 30px;
+  background-color: #cccccc;
+  background-image: linear-gradient(rgba(167, 253, 6, 0.432), rgb(227, 241, 173));
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(248, 244, 244, 0.281);
+  /* Cor de fundo transparente */
+  backdrop-filter: blur(10px);
+  /* Efeito de desfoque no fundo (opcional) */
+  padding: 10px;
+  z-index: 9999;
+  /* Certifique-se de que o cabeçalho fique acima de outros elementos */
+  /* Outras propriedades de estilo que você pode querer adicionar ao cabeçalho */
+}
+
+
+.imgaracaju {
+  width: 30px;
+  height: 30px;
+}
+
+.content {
+  /* Adicione algum espaço para que o conteúdo principal não fique escondido sob o cabeçalho */
+  padding-top: 115px;
+  /* Ajuste de acordo com a altura do cabeçalho */
+}
+
+#accordion {
+  text-align: justify;
+  padding: 20px;
+}
+
+.social-icon {
+  padding: 30px;
+}
+
+.redes {
+  padding: 20px;
+  color: #2f89ff;
+  font-size: xx-large
+}
+
+/*footer estiloso*/
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: auto;
+  margin: auto;
+  
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: #ccc;
+  margin: 0;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social-icon {
+  margin-right: 10px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}
