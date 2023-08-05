@@ -13,7 +13,7 @@ se jk <= 5 entao
             escreval("Nome Completo do Cliente")
             escreval("")
             leia(vetCadastro[jk])
-            escreval("CPF do cliente (apenas n√∫meros)")
+            escreval("CPF do cliente (apenas n˙meros)")
             escreval("")
             leia(vetCPF[jk])
             escreval("E-mail do cliente")
@@ -29,7 +29,7 @@ se jk <= 5 entao
             limpatela
             jk <- jk +1
          senao
-            escreval("Infelizmente n√£o posso cadastrar mais clientes. ")
+            escreval("Infelizmente n„o posso cadastrar mais clientes. ")
          fimse
 fimprocedimento
 
@@ -39,7 +39,7 @@ Inicio
 se jk -1 > 0 entao
             escreval("Clientes Cadastrados: ")
             para i de 1 ate jk -1 faca
-               escreval("Cliente de n√∫mero ",i,":")
+               escreval("Cliente de n˙mero ",i,":")
                escreval("Nome:",vetCadastro[i])
                escreval("Cpf:",vetCPF[i])
                escreval("E-mail:",vetEmail[i])
@@ -47,8 +47,8 @@ se jk -1 > 0 entao
                escreval("Tempo de viagem:",vetData[i])
             fimpara
          senao
-            escreval("Estes s√£o todos os clientes")
-            escreval("cadastrados no sistema at√© hoje")
+            escreval("Estes s„o todos os clientes")
+            escreval("cadastrados no sistema atÈ hoje")
          fimse
 
 fimprocedimento
@@ -64,9 +64,9 @@ Inicio
    escreval ("--------Homes--------")
    escreval ("---------------------")
    escreval ("Utilize o menu abaixo")
-   escreval ("Op√ß√£o 1 ---- Cadastro")
-   escreval ("Op√ß√£o 2 ---- Consulta")
-   escreval ("Op√ß√£o 3 -------- Sair")
+   escreval ("OpÁ„o 1 ---- Cadastro")
+   escreval ("OpÁ„o 2 ---- Consulta")
+   escreval ("OpÁ„o 3 -------- Sair")
    escreval ("---------------------")
    escreval ("---------------------")
       leia(opcao)
@@ -77,9 +77,9 @@ Inicio
       caso 2
            Consulta()
       caso 3
-         escreval("At√© mais!")
+         escreval("AtÈ mais!")
       outrocaso
-         escreval("N√£o consigo executar esse comando" )
+         escreval("N„o consigo executar esse comando" )
       fimescolha
    fimenquanto
 Fimalgoritmo
