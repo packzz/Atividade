@@ -48,7 +48,7 @@ body {
 
 .content {
   /* Adicione algum espaço para que o conteúdo principal não fique escondido sob o cabeçalho */
-  padding-top: 140px;
+  padding-top: 115px;
   /* Ajuste de acordo com a altura do cabeçalho */
 }
 
@@ -73,7 +73,7 @@ body {
   color: #fff;
   padding: auto;
   margin: auto;
-
+  
 }
 
 .footer-content {
